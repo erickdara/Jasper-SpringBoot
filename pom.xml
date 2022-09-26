@@ -8,11 +8,11 @@
 		<version>2.7.4</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.reports.jaspersoft</groupId>
+	<groupId>Jasper-Report</groupId>
 <!--	<artifactId>com.bcp.hipotecario-aprobado</artifactId>-->
-	<artifactId>com.reports.jaspersoft</artifactId>
+	<artifactId>Jasper-Report</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>com.bcp.hipotecario-aprobado</name>
+	<name>Jasper-Report</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>17</java.version>
