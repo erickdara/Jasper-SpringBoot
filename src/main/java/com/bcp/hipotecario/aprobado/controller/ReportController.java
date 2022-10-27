@@ -1,6 +1,5 @@
-package com.reports.jaspersoft.controller;
+package com.bcp.hipotecario.aprobado.controller;
 
-import com.reports.jaspersoft.service.ReportService;
 import lombok.RequiredArgsConstructor;
 import net.sf.jasperreports.engine.JRException;
 
@@ -10,6 +9,9 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.bcp.hipotecario.aprobado.service.ReportService;
 
 import java.io.IOException;
 import java.time.LocalDate;
@@ -32,6 +34,13 @@ public class ReportController {
                                  @RequestParam("fileFormat") String fileFormat) throws JRException, IOException{
         LocalDate localDate = LocalDate.parse(date);
         String fileLink = reportService.generateReport(localDate, fileFormat);
+        return "redirect:/"+fileLink;
+    }
+    
+    @GetMapping("/reporte")
+    public String generateReport(@RequestParam("loan") Integer loan, @RequestParam("fileFormat") String fileFormat) throws JRException, IOException{
+        //LocalDate localDate = LocalDate.parse(date);
+        String fileLink = reportService.generateReportAprobado(loan, fileFormat);
         return "redirect:/"+fileLink;
     }
 }

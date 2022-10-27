@@ -1,4 +1,4 @@
-package com.reports.jaspersoft.model;
+package com.bcp.hipotecario.aprobado.model;
 
 public enum ProductType {
     PHONE,

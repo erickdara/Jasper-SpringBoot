@@ -1,4 +1,4 @@
-package com.reports.jaspersoft.model;
+package com.bcp.hipotecario.aprobado.model;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;

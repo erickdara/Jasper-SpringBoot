@@ -1,7 +1,8 @@
-package com.reports.jaspersoft.repository;
+package com.bcp.hipotecario.aprobado.repository;
 
-import com.reports.jaspersoft.model.Product;
 import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.bcp.hipotecario.aprobado.model.Product;
 
 import java.time.LocalDate;
 import java.util.List;
